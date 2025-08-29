@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: webhook-app
+  main:
+    web-application-type: servlet
+    
+server:
+  port: 8080
+  
+logging:
+  level:
+    com.example.webhookapp: INFO
+    org.springframework.web.client: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%level] %logger{36} - %msg%n"
